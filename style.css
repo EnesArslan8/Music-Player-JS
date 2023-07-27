@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+body .container{
+    width: 30vw;
+}
+body .container img{
+    width: 100%;
+    height: 50vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+body .container #music-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px;
+    border-bottom: 2px solid #ced4da;
+}
+body .container #music-details p{
+    margin: 5px;
+}
+body .container #progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+}
+#progress input{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 10px;
+}
+  
+body .container #progress input:hover {
+    opacity: 1;
+}
+  
+body .container #progress input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: rgb(0, 0, 100);
+    cursor: pointer;
+}
+  
+body .container #progress input::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+body .container #progress .times{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body .container #progress .times span#duration{
+    margin-left: 20vw;
+}
+body .container .controls {
+    display: inline-block;
+    justify-content: space-between;
+}
+body .container .controls .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+body .container .controls i{
+    font-size: 20px;
+    color: rgb(0, 0, 100);
+}
+body .container .controls i#play{
+    font-size: 40px;
+}
+body .container .controls .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3vh;
+    padding: 1vh;
+    border-top: 1px solid #ced4da;
+    text-align: center;
+}
+body .container .controls .footer button{
+    background-color: rgb(0, 0, 100);
+    border: none;
+}
+body .container .controls .footer button i{
+    color: #fff;
+}
+body .container .controls .footer div i{
+    margin-right: 10px;
+}
+body .container .controls .footer div input{
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+body .container .controls .footer div input:hover {
+    opacity: 1;
+}
+  
+body .container .controls .footer div input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(0, 0, 100);
+    cursor: pointer;
+}
+  
+body .container .controls .footer div input::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(0, 0, 100);
+    cursor: pointer;
+}
+body .container #music-list{
+    cursor:pointer;
+}
+body .container #music-list li.li-playing{
+    background-color: #04AA6D;
+}
